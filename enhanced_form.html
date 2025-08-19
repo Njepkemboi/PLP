@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Self-Care Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 20px;
+      background-color: #f7fdfc;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, section, footer {
+      margin-bottom: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #c2e0dd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    fieldset {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid #aacfcf;
+      background-color: #ffffff;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Self-Care Dashboard</h1>
+    <p>Welcome! This page is designed to help you focus on your well-being by exploring self-care tips and tracking your personal care habits.</p>
+  </header>
+
+  <section>
+    <h2>Top 5 Self-Care Activities</h2>
+    <ol>
+      <li>Meditation or deep breathing</li>
+      <li>Journaling your thoughts and feelings</li>
+      <li>Taking a nature walk</li>
+      <li>Unplugging from screens</li>
+      <li>Listening to calming music</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Types of Self-Care</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Examples</th>
+          <th>Frequency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Emotional</td>
+          <td>Therapy, journaling</td>
+          <td>Weekly</td>
+        </tr>
+        <tr>
+          <td>Physical</td>
+          <td>Exercise, nutrition, sleep</td>
+          <td>Daily</td>
+        </tr>
+        <tr>
+          <td>Mental</td>
+          <td>Reading, puzzles, hobbies</td>
+          <td>Several times/week</td>
+        </tr>
+        <tr>
+          <td>Spiritual</td>
+          <td>Meditation, nature, prayer</td>
+          <td>Weekly</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Motivational Video</h2>
+    <p>Take a moment to relax and enjoy this peaceful scene:</p>
+    <video controls width="500">
+      <source src="https://www.youtube.com/watch?v=020g-0hhCAU&list=RD020g-0hhCAU&start_radio=1" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>Your Self-Care Journal & Preferences</h2>
+    <form action="#" method="post" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="Your name" />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+        <label for="mood">Current Mood</label>
+        <input type="text" id="mood" name="mood" placeholder="e.g., Calm, Anxious, Happy" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Self-Care Preferences</legend>
+
+        <label for="favorite">Favorite Self-Care Activity *</label>
+        <input type="text" id="favorite" name="favorite" required />
+
+        <label for="hours">Hours you dedicate to self-care per week</label>
+        <input type="number" id="hours" name="hours" min="0" max="168" />
+
+        <label for="careType">Preferred Type of Self-Care</label>
+        <select id="careType" name="careType">
+          <option value="">--Choose one--</option>
+          <option value="emotional">Emotional</option>
+          <option value="physical">Physical</option>
+          <option value="mental">Mental</option>
+          <option value="spiritual">Spiritual</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Reflection</legend>
+
+        <label for="reflection">Write a short reflection</label>
+        <textarea id="reflection" name="reflection" rows="4" maxlength="500" placeholder="How are you feeling today? What’s working for your self-care?"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Confirmation</legend>
+        <label>
+          <input type="checkbox" name="agree" required />
+          I confirm that this is my honest reflection and agree to save this entry.
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit Entry</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Self-Care Tracker. Stay kind to yourself 💚</p>
+  </footer>
+
+</body>
+</html>
